@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <h1 class="title">Color Game</h1>
+        <div class="container">
+            <div class="top">
+                <button class="part" id="red" onclick="colorPressed('red')"></button>
+
+                <button class="part" id="green" onclick="colorPressed('green')"></button>
+            </div>
+            <div class="bottom">
+                <button class="part" id="blue" onclick="colorPressed('blue')"></button>
+                
+                <button class="part" id="yellow" onclick="colorPressed('yellow')"></button>
+            </div>
+        </div>
+        <div id="levelDisplay"><div class='levelSquare'></div></div>
+        <button id="showAgain" onclick="showSerieAgain()">Play</button>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

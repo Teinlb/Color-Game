@@ -1,0 +1,82 @@
+html{
+    background-color:black;
+    text-align:center;
+    font-family: "Montserrat";
+}
+
+
+.scoreDisplay{
+    position:absolute;
+    top:3%;
+    justify-content: left;
+    background-color:rgba(40,40,40);
+    color:white;
+}
+
+main{
+    justify-content: center;
+    margin:6% 0;
+    .title{
+        font-size:2.5rem;
+        color:white;
+    }
+    .part{
+        width:15em;
+        height:15em;
+        margin:0.6em;
+        border-radius:1em;
+        border:none;
+        transition: transform 0.25s;
+        transition: opacity 0.25s;
+    }
+    .part:hover{
+        transform: scale(0.95);
+        cursor:pointer;
+    }
+    #red{
+        border-top-left-radius: 7em;
+        background-color: red;
+        box-shadow: inset 1em 1em 4em rgba(0, 0, 0, 1)
+    }
+    #green{
+        border-top-right-radius: 7em;
+        background-color: green;
+        box-shadow: inset -1em 1em 4em rgba(0, 0, 0, 1)
+    }
+    #blue{
+        border-bottom-left-radius: 7em;
+        background-color: blue;
+        box-shadow: inset 1em -1em 4em rgba(0, 0, 0, 1)
+    }
+    #yellow{
+        border-bottom-right-radius: 7em;
+        background-color: yellow;
+        box-shadow: inset -1em -1em 4em rgba(0, 0, 0, 1)
+    }
+    #showAgain{
+        background-color:rgba(40,40,40);
+        color:white;
+        font-family: "Montserrat";
+        width:15%;
+        font-weight:500;
+        font-size: 1.2em;
+        border:none;
+        border-radius: 25px;
+        padding:20px;
+        margin:0.6em;
+        transition: transform 0.25s;
+        transition: opacity 0.5s;
+    }
+    #showAgain:hover{
+        transform: scale(0.95);
+        cursor:pointer;
+    }
+}
+
+.levelSquare{
+    background-color: rgb(35, 255, 0);
+    width:32px;
+    height:8px;
+    display: inline-block;
+    margin:20px 2px;
+}
